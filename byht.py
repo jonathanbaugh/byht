@@ -74,7 +74,7 @@ def add(name):
 
     if os.path.exists(package_path):
         click.echo("Package already installed", err=True)
-        # exit(1)
+        exit(1)
     elif "repository" in package:
         git.Repo.clone_from(
             package["repository"],
