@@ -1,0 +1,9 @@
+---
+name: byht
+description: Byht manager
+repository: https://github.com/jonathanbaugh/byht.git
+install:
+  virtualenv: venv
+  pip-requirements: requirements.txt
+scripts:
+  byht: bin/byht.sh
